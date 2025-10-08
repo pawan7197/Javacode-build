@@ -66,7 +66,7 @@ sudo apt install git -y
 <img width="909" height="432" alt="build success 6" src="https://github.com/user-attachments/assets/8e4977d4-2c5d-4b77-812e-a12ddd0a3ecb" />
 
 
-On Deploy Server
+## On Deploy Server
 ```
 sudo apt update -y
 sudo apt install openjdk-11-jdk -y
@@ -88,7 +88,7 @@ sudo apt install openjdk-11-jdk -y
 <img width="1598" height="282" alt="install java on deploy server 8" src="https://github.com/user-attachments/assets/5dc48dcf-0ed8-4bbc-a27d-bea48d90d6b3" />
 
 
-Download and install Apache Tomcat 9:
+## Download and install Apache Tomcat 9:
 
 ```
 
@@ -104,7 +104,7 @@ sudo tar -xvzf apache-tomcat-9.0.93.tar.gz
 <img width="1599" height="713" alt="tomcat 10" src="https://github.com/user-attachments/assets/2884cdf1-48e9-44ef-bdce-5a4412b67b5b" />
 
 
-🧱 2. Clone the Repository on Build Server
+## 🧱 2. Clone the Repository on Build Server
 ```
 git clone https://github.com/AKSarav/TomcatMavenApp.git
 
@@ -112,7 +112,7 @@ cd TomcatMavenApp
 ```
 <img width="963" height="207" alt="git clone 4" src="https://github.com/user-attachments/assets/099a5369-4734-4cce-a2ff-f8758769787d" />
 
-🏗️ 3. Build the WAR File using Maven
+## 🏗️ 3. Build the WAR File using Maven
 
 ```
 mvn clean package
@@ -130,7 +130,7 @@ Expected output:
 ```
 TomcatMavenApp.war
 ```
-🔁 4. Transfer the WAR File to the Deploy Server
+## 🔁 4. Transfer the WAR File to the Deploy Server
 From the build server, use scp to copy the WAR file to the deploy server:
 
 ```
@@ -140,7 +140,7 @@ Replace <DEPLOY_SERVER_IP> with your actual Deploy Server’s public IP.
 
 ```
 
-⚙️ 5. Configure Tomcat on Deploy Server
+## ⚙️ 5. Configure Tomcat on Deploy Server
 Step 1: Add a Tomcat User
 ```
 
@@ -157,7 +157,7 @@ Add this block before </tomcat-users>:
 
 ```
 
-Step 2: Allow Remote Access to Tomcat Manager
+## Step 2: Allow Remote Access to Tomcat Manager
 ```
 sudo nano /opt/tomcat9/webapps/manager/META-INF/context.xml
 Comment this line:
