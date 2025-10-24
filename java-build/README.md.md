@@ -102,7 +102,7 @@ This project demonstrates how to **build and deploy a Java Web Application** usi
 <img width="1599" height="476" alt="copying pemfile to server from local" src="https://github.com/user-attachments/assets/09b148e9-a5e2-41b8-8baf-7066b55686e6" />
 
 
-15. **File transfer**
+15. **transfering the War file from build server to deploy server**
 
 
 <img width="1599" height="253" alt="file transfer 12" src="https://github.com/user-attachments/assets/c3a768b8-5f5b-4472-a4e4-a1fbf8919638" />
